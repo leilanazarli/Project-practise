@@ -1,0 +1,17 @@
+footer{
+    background: #368873;
+    height: 20vh;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color:#c2bfbf;
+            font-size: 21px;
+            a{
+                color: #0c5b47;
+                text-decoration: none;
+            }
+        }
+    }
+}

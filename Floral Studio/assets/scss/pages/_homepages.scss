@@ -1,0 +1,48 @@
+.sec3{
+   background-image: url("../img/background2.jpg");
+}
+.sec4{
+    .container{
+        .cards{
+            .card{
+                position: relative;
+                &:hover{
+                    .font{
+                        display: block;
+                        position: absolute;
+                        left: 4px;
+                        top: 5px;
+                       div{
+                        display: block;
+                        a{
+                            color: #338873;
+                            i{
+                            border: 1px solid white;
+                            background-color: rgb(252, 247, 247);
+                            border-radius: 50%;
+                            font-size: 25px;
+                            padding: 7px;
+                        }
+                        }
+                       }
+                    }
+                }
+                .font{
+                    display: none;
+                   div{
+                    display: none;
+                    a{
+                        color: #338873;
+                        i{
+                        border: 1px solid white;
+                        background-color: rgb(252, 247, 247);
+                        border-radius: 50%;
+                        padding: 3px;
+                    }
+                    }
+                   }
+                }
+            }
+        }
+    }
+}

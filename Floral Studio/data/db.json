@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leyla",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "photo": "b2.jpg",
+      "price": 45
+    },
+    {
+      "photo": "b3.jpg",
+      "id": 2,
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "name": "Orkide",
+      "price": "24"
+    },
+    {
+      "id": 3,
+      "photo": "sl4.jpg",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "name": "Daffodil",
+      "price": 78
+    },
+    {
+      "id": 4,
+      "photo": "fl2.jpg",
+      "name": "Lily",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "price": 98
+    },
+    {
+      "id": 5,
+      "photo": "fl1.jpg",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "name": "Rose",
+      "price": 12
+    },
+    {
+      "id": 8,
+      "photo": "b4.jpg",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "name": "Dahlia",
+      "price": "234"
+    },
+    {
+      "name": "dahia",
+      "description": "Orkideler, güzel ve eşsiz çiçekleri, kokuları, yaprakları ve tıbbi kullanımları ile oldukça değerlidir. Orkideler ya karasal ya da epifiktir",
+      "price": "2345",
+      "photo": "b2.jpg",
+      "id": 9
+    }
+  ],
+  "fav": [
+    {
+      "photo": "sl7.jpg",
+      "id": 2,
+      "name": "Orkide",
+      "price": 24
+    },
+    {
+      "id": 3,
+      "photo": "sl4.jpg",
+      "name": "Daffodil",
+      "price": 78
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  padding: 20px 10px;
+  background: rgba(16, 99, 78, 0.9);
+  position: fixed;
+  z-index: 3;
+}
+header .container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+header .container nav .burger {
+  display: none;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .container nav ul li a {
+  color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  header .container nav .burger {
+    display: block;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav ul.show {
+    background-color: #1b745e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    z-index: 3;
+  }
+}
+.sec3 {
+  background-image: url("../img/background2.jpg");
+}
+
+.sec4 .container .cards .card {
+  position: relative;
+}
+.sec4 .container .cards .card:hover .font {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 5px;
+}
+.sec4 .container .cards .card:hover .font div {
+  display: block;
+}
+.sec4 .container .cards .card:hover .font div a {
+  color: #338873;
+}
+.sec4 .container .cards .card:hover .font div a i {
+  border: 1px solid white;
+  background-color: rgb(252, 247, 247);
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 7px;
+}
+.sec4 .container .cards .card .font {
+  display: none;
+}
+.sec4 .container .cards .card .font div {
+  display: none;
+}
+.sec4 .container .cards .card .font div a {
+  color: #338873;
+}
+.sec4 .container .cards .card .font div a i {
+  border: 1px solid white;
+  background-color: rgb(252, 247, 247);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+footer {
+  background: #368873;
+  height: 20vh;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  color: #c2bfbf;
+  font-size: 21px;
+}
+footer .container p a {
+  color: #0c5b47;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
