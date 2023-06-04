@@ -1,0 +1,26 @@
+footer{
+    height: 20vh;
+    background: #1e1e1e;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color:#c2bfbf;
+            font-size: 21px;
+            a{
+                color: #337ab7;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+footer{
+    .container{
+        p{
+            font-size: 15px;
+        }
+    }
+}
+}

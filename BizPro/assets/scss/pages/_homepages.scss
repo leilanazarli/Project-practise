@@ -1,0 +1,191 @@
+.sec1{
+    @media only screen and (max-width: 991px) {
+        .carousel-caption{
+            .row{
+            .col{
+                h1{
+                    color: white;
+                    font-size: 26px;
+                    text-align: center;
+                }
+                h6{
+                    color: white;
+                    font-size: 14px;
+                    text-align: center;
+                }
+                button{
+                color: white;
+                border-radius: 0;
+                padding: 10px 20px;
+                }
+            }
+        }
+    }
+    }
+    h1{
+        color: white;
+        font-size: 48px;
+        text-align: center;
+    }
+    h6{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+    button{
+    color: white;
+    border-radius: 0;
+    padding: 10px 20px;
+    }
+}
+.sec2{
+    // height: 100vh;
+    
+    .container{
+        margin-top: 100px;
+    //     @media only screen and (max-width: 991px) {
+    //        .sec2-bottom{
+    //         .card{
+    //            .card-body{
+    //             h5{
+    //                 font-size: 16px;
+    //             }
+    //            }
+    //         }
+    //     } 
+    // }
+        h1{
+            position: relative;
+            font-weight: 700;
+            text-align: center;
+            font-size: 42px;
+            margin: 40px;
+            &::before{
+                content: "";
+                
+                width: 50px;
+                height: 4px;
+                background: rgb(129, 7, 7);
+                position: absolute;
+                left: 47%;
+                bottom: -10px;
+            }
+        }
+        p{
+            text-align: center ;
+            font-size: 18px;
+             color: #6b6d6f;
+             margin-bottom:40px;
+
+        }
+}
+}
+
+
+.sec3{
+    // height: 100vh;
+    margin-bottom: 80px;
+    @media only screen and (max-width: 991px) {
+        .container{
+            margin-top: 200px;
+        }
+       }
+    .container{
+        h1{
+            position: relative;
+            font-weight: 700;
+            text-align: center;
+            font-size: 42px;
+            margin: 40px;
+            &::before{
+                content: "";
+                
+                width: 50px;
+                height: 4px;
+                background: rgb(129, 7, 7);
+                position: absolute;
+                left: 47%;
+                bottom: -10px;
+            }
+        }
+                    p{
+                        text-align: center;
+                        color: #868e96;
+                    }
+    }
+}  
+
+.sec4{
+    // height: 100vh;
+    
+    .container{
+        h1{
+            position: relative;
+            font-weight: 700;
+            text-align: center;
+            font-size: 42px;
+            margin: 40px;
+            &::before{
+                content: "";
+                
+                width: 50px;
+                height: 4px;
+                background: rgb(129, 7, 7);
+                position: absolute;
+                left: 47%;
+                bottom: -10px;
+            }
+        }
+                    .sec4-p{
+                        text-align: center;
+                        color: #868e96;
+                        margin-bottom: 30px;
+                    }
+                    .card{
+                    //    position: relative;
+                        .a-trans{
+                                // color: black;
+                            display: none;
+                    //         background: rgba(0,0,0,0.5);
+                    //         text-align: center;
+                    //         font-size: 28px;
+                    //         &:hover{  
+                    //             position: absolute;
+                    //             display: block;
+                    //             background:linear-gradient(180deg , rgb(87, 83, 83) -10% ,rgba(226, 223, 223, 0.2) );
+                    //         }
+                        }
+                        .card-body{
+@media only screen and (max-width: 991px) {
+    .tran3s{
+    font-size: 15px ;}
+
+}
+                            .tran3s{
+                                display: block;
+                                font-weight: 700;
+                                font-size: 20px;
+                                text-transform: none;
+                                color: #292929;
+                                margin-bottom: 30px;
+                                transition: .6s;
+                                &:hover{
+                                    color: red;
+                                }
+                            }
+                            .p-top , .p-bottom{
+                                text-align: left;
+                                color: #444343;
+                            }
+                            .readmore{
+                                color: black;
+                                font-weight: 400;
+                                transition: .6s;
+                                &:hover{
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+    }
+}

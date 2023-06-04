@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": 2,
+      "photo": "./diagram.png",
+      "title": "DIGITAL MEDIA",
+      "text": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "price": 89
+    },
+    {
+      "id": 4,
+      "photo": "undefined",
+      "title": "ONLINE MARKETING",
+      "text": "sadadsa",
+      "price": 57
+    },
+    {
+      "title": "Ut quisquam at dolor",
+      "text": "Saepe dignissimos qu",
+      "photo": "undefined",
+      "id": 5
+    }
+  ],
+  "fav": []
+}
