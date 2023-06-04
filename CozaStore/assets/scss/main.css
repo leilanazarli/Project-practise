@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav .burger, header .container nav .fa-xmark, header .container nav .fa-bars {
+  display: none;
+}
+header .container nav .allright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header .container nav .allright li a {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+header .container nav .allright li a:hover {
+  color: #6c7ae0;
+}
+header .container nav .allright li a .head {
+  color: #6c7ae0;
+}
+header .container nav .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header .container nav .all li a {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+header .container nav .all li a:hover {
+  color: #6c7ae0;
+}
+header .container nav .all li a .head {
+  color: #6c7ae0;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+header .dropdown:hover > .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 30px;
+  border-radius: 0;
+  border-color: white;
+}
+header > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 992px) {
+  header .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header .container nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  header .container nav .burger, header .container nav .fa-xmark, header .container nav .fa-bars {
+    display: block;
+  }
+  header .container nav .all {
+    display: none;
+  }
+  header .container nav .all.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+  }
+}
+footer {
+  width: 100%;
+  background-color: #222;
+}
+footer .container {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+footer .container .bottom p {
+  color: grey;
+}
+
+.sec1 .buttonprimary {
+  padding: 15px 40px;
+  color: white;
+  background-color: #6c7ae0;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+.sec1 .buttonprimary:hover {
+  background-color: black;
+}
+
+.sec2 .row .card {
+  border-color: white !important;
+  position: relative;
+  transform: translateY(0);
+}
+.sec2 .row .card .cord {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.sec2 .row .card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 107, 210, 0.8);
+  transition: all 0.4s ease;
+  transform: translateY(50px);
+}
+.sec2 .row .card:hover .cord {
+  display: none;
+}
+.sec2 .row .card:hover::after {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+.sec2 .row .card:hover a {
+  opacity: 1;
+}
+.sec2 .row .card a {
+  position: absolute;
+  top: 50px;
+  display: block;
+  padding: 23px 90px 23px 25px;
+  opacity: 0;
+  z-index: 4;
+  transition: all 0.4s ease-in-out;
+}
+.sec2 .row .card a h4 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+}
+.sec2 .row .card a p {
+  color: #fff;
+  margin: 0;
+  margin-top: 20px;
+}
+.sec2 .row .card a h5 {
+  padding-top: 50px;
+}
+
+.sec3 .button {
+  padding: 15px 40px;
+  color: grey;
+  background-color: white;
+  border: 1px solid grey;
+}
+.sec3 .button:hover {
+  background-color: #6c7ae0;
+  color: white;
+}
+.sec3 .search {
+  position: relative;
+  padding: 15px 40px;
+  color: grey;
+  background-color: white;
+  border: 1px solid grey;
+}
+.sec3 .search:hover {
+  background-color: #6c7ae0;
+  color: white;
+}
+.sec3 .search:hover::-moz-placeholder {
+  color: white;
+}
+.sec3 .search:hover::placeholder {
+  color: white;
+}
+.sec3 .glass {
+  position: absolute;
+  color: grey;
+  z-index: 2;
+  margin-left: -70px;
+}
+.sec3 .container {
+  padding: 50px 0;
+}
+.sec3 .container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.sec3 .container .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec3 .container .bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.sec3 .container .bottom .left li a {
+  color: grey;
+}
+.sec3 .container .bottom .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec3 .container .data .card {
+  position: relative;
+}
+.sec3 .container .data .card .img {
+  overflow: hidden;
+}
+.sec3 .container .data .card .img img {
+  width: 100%;
+  transition: all 0.3s ease 0s;
+}
+.sec3 .container .data .card .buttonhover {
+  position: absolute;
+  z-index: 3;
+  display: none;
+  justify-content: center;
+  width: 100%;
+  top: 45%;
+}
+.sec3 .container .data .card .buttonhover .buttonwhite {
+  padding: 15px 30px;
+  color: grey;
+  background-color: white;
+  border: 1px solid rgb(239, 237, 237);
+  border-radius: 25px;
+}
+.sec3 .container .data .card .buttonhover .buttonwhite:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+.sec3 .container .data .card:hover .img {
+  overflow: hidden;
+}
+.sec3 .container .data .card:hover .img img {
+  transform: scale(1.1);
+}
+.sec3 .container .data .card:hover .buttonhover {
+  display: flex;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #6c7ae0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 992px) {
+  .sec1 span {
+    font-size: 20px !important;
+  }
+  .sec1 h5 {
+    font-size: 20px !important;
+  }
+  .sec1 .buttonprimary {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .sec3 .container h1 {
+    text-align: center;
+  }
+  .sec3 .container .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */

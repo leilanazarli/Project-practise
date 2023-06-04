@@ -1,0 +1,115 @@
+header{
+position: fixed;
+z-index: 6;
+width: 100%;
+ .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       .burger, .fa-xmark ,.fa-bars{
+       display: none;
+       }
+       .allright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        li{
+        a{
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+            &:hover{
+                color: #6c7ae0;
+            
+            }
+        .head{
+            color: #6c7ae0;
+        }
+        }
+        }
+       }
+       .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        li{
+        a{
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+            &:hover{
+                color: #6c7ae0;
+            
+            }
+        .head{
+            color: #6c7ae0;
+        }
+        }
+        }
+       }
+    }
+     
+ }
+ .dropdown-toggle::after {
+     display: none;
+     }
+     .dropdown {
+     &:hover {
+     & > .dropdown-menu {
+     display: block;
+     position: absolute;
+     top: 30px;
+     border-radius: 0;
+     border-color: white;
+     }
+     }
+     }
+     & > .dropdown-toggle {
+     &:active {
+     pointer-events: none;
+     }
+     }
+}
+@media only screen and (max-width:992px){
+        header{
+            .container{
+            padding-left: 30px;
+            padding-right: 30px;
+            nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-direction: row-reverse;
+            
+            position: relative;
+            .burger ,.fa-xmark ,.fa-bars{
+              display: block;
+            }
+                .all{
+                    display: none;
+                   ;
+                    
+                    &.show{
+                     display: flex;
+                     flex-direction: column;
+                     position: absolute;
+                     top: 20px;
+                     width: 100%;
+                     z-index: 5;
+                     background-color: white
+                    }
+                    }
+            }
+          }
+        }
+        
+        
+}
