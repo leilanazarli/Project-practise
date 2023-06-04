@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+}
+header .container nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav i {
+  display: none;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container nav ul li a {
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header .container nav ul li a:hover {
+  color: #7db9e8;
+}
+
+@media only screen and (max-width: 991px) {
+  header .container nav i {
+    display: block;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav ul.show {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a92a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 70px;
+    left: 0;
+    position: absolute;
+    z-index: 4;
+  }
+}
+.sec1 {
+  background-image: url("../img/server-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.sec1 .container {
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+}
+.sec1 .container .sec1-top span {
+  background: #fc6428;
+  padding: 10px;
+}
+.sec1 .container .sec1-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec1 .container .sec1-bottom .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  width: 50%;
+}
+.sec1 .container .sec1-bottom .left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.sec1 .container .sec1-bottom .left h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+.sec1 .container .sec1-bottom .left p {
+  font-size: 16px;
+}
+.sec1 .container .sec1-bottom .left .row a {
+  color: white;
+}
+.sec1 .container .sec1-bottom .left button {
+  background-color: #fc6428;
+  outline-color: #fc6428 !important;
+  width: 40%;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.sec1 .container .sec1-bottom .right {
+  width: 40%;
+}
+.sec1 .container .sec1-bottom .right img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .sec1 .container .sec1-bottom {
+    flex-direction: column;
+  }
+  .sec1 .container .sec1-bottom .left, .sec1 .container .sec1-bottom .right {
+    width: 90%;
+  }
+}
+.sec2 .container {
+  margin-top: 50px;
+}
+.sec2 .container h1 {
+  font-size: 35px;
+  color: #424242;
+  font-size: 52px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.sec2 .container h1::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 20%;
+  left: 40%;
+  height: 2px;
+  background-color: black;
+}
+.sec2 .container p {
+  text-align: center;
+  margin-top: 30px;
+  color: #424242;
+}
+.sec2 .container .d-flex .cards {
+  text-align: center;
+}
+.sec2 .container .d-flex .cards h3 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #262424 !important;
+}
+.sec2 .container .d-flex .cards p {
+  line-height: 27px;
+  color: #6b6d6f;
+}
+
+.sec3 {
+  background: #7db9e8;
+  color: white;
+  display: flex;
+}
+.sec3 .container {
+  margin-top: 50px;
+  padding: 100px 0;
+}
+.sec3 .container h1 {
+  font-size: 52px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.sec3 .container h1::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 20%;
+  left: 40%;
+  height: 2px;
+  background-color: white;
+}
+.sec3 .container p {
+  text-align: center;
+  line-height: 26px;
+  margin-top: 30px;
+}
+.sec3 .container .row .col {
+  display: flex;
+  align-items: center;
+}
+.sec3 .container .row .col .icon {
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.sec3 .container .row .col .icon i {
+  font-size: 22px;
+  color: #7db9e8;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.sec3 .container .row .col .text p {
+  margin: 0;
+}
+
+.sec4 .container {
+  margin-top: 50px;
+  padding: 100px 0;
+}
+.sec4 .container h1 {
+  font-size: 52px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  color: #424242;
+}
+.sec4 .container h1::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 20%;
+  left: 40%;
+  height: 2px;
+  background-color: black;
+}
+.sec4 .container p {
+  color: #424242;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+footer .container {
+  padding: 90px 0;
+}/*# sourceMappingURL=main.css.map */
