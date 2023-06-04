@@ -1,0 +1,16 @@
+footer{
+    background: #bc5148;
+    width: 100%;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            a,i{
+                color: red;
+            }
+        }
+    }
+}
