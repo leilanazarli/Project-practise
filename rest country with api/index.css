@@ -1,0 +1,48 @@
+header .container {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container a {
+  text-decoration: none;
+  color: rgb(17, 21, 23);
+  font-weight: 600;
+}
+
+hr {
+  margin: 0;
+}
+
+section {
+  background-color: #F2F2F2;
+}
+section .container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+section .container .top {
+  display: flex;
+  justify-content: space-between;
+}
+section .container .top span {
+  background-color: white !important;
+}
+section .container .spinner {
+  color: rgb(17, 21, 23);
+}
+
+body.dark header, body.dark span, body.dark input, body.dark select, body.dark .card, body.dark .left, body.dark a {
+  background-color: rgb(43, 56, 68) !important;
+  color: white;
+}
+body.dark .spinner {
+  color: white;
+}
+body.dark section {
+  background-color: rgb(32, 44, 54);
+  color: white;
+}/*# sourceMappingURL=index.css.map */

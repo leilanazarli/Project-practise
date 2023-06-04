@@ -1,0 +1,52 @@
+header{
+    .container{
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: rgba(17, 21, 23, 1);
+            font-weight: 600;
+        }
+    }
+}
+hr{
+    margin: 0;
+}
+section{
+    background-color: #F2F2F2;
+    .container{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            span{
+                background-color: white !important;
+            }
+        }
+        .spinner{
+            color: rgba(17, 21, 23, 1);
+        }
+    }
+}
+ body{
+    &.dark{
+        header , span,input , select ,.card ,.left,a{
+            background-color:rgba(43, 56, 68, 1) !important ;
+            color: white;
+        }
+        .spinner{
+           color: white;
+        }
+        section{
+            background-color: rgba(32, 44, 54, 1);
+            color: white;
+
+        }
+    }
+ }
