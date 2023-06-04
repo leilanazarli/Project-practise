@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+header .dropdown:hover > .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 23px;
+  border-radius: 0;
+  border-color: white;
+}
+header > .dropdown-toggle:active {
+  pointer-events: none;
+}
+header .dropdown-item {
+  padding: 10px 20px;
+}
+header .container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav .all {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .container nav .all li a {
+  color: black;
+}
+header .container nav .all li a:hover {
+  color: blue;
+}
+header .container nav .button {
+  padding: 10px 45px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+header .container nav .button:hover {
+  border-color: blue;
+}
+
+footer {
+  background: rgba(0, 35, 71, 0.980392);
+  width: 100%;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+footer .container p {
+  color: white;
+}
+
+.sec1 {
+  background-color: #F1F6F7;
+  padding-top: 150px;
+}
+.sec1::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 98%;
+  background: #384aeb;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sec1 .container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.sec1 .container .left img {
+  position: sticky;
+  height: 548px;
+  width: 470px;
+}
+.sec1 .container .right {
+  font-family: "Roboto", sans-serif;
+}
+.sec1 .container .right span {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(112, 111, 111);
+}
+.sec1 .container .right h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.sec1 .container .right p {
+  color: rgb(181, 179, 179);
+  font-size: 18px;
+}
+.sec1 .container .right .button {
+  border: 1px solid blue;
+  background: blue;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+.sec1 .container .right .button:hover {
+  background-color: #F1F6F7;
+  color: black;
+  border-color: blue;
+}
+
+.sec2 .row .card {
+  border-color: white !important;
+  position: relative;
+  transform: translateY(0);
+}
+.sec2 .row .card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease;
+  transform: translateY(50px);
+}
+.sec2 .row .card:hover::after {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+.sec2 .row .card:hover a {
+  opacity: 1;
+}
+.sec2 .row .card a {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  background: #384aeb;
+  padding: 23px 90px 23px 25px;
+  opacity: 0;
+  z-index: 4;
+  transition: all 0.4s ease-in-out;
+}
+.sec2 .row .card a h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.sec2 .row .card a p {
+  color: #fff;
+  margin: 0;
+}
+
+.sec3 {
+  font-family: "Roboto", sans-serif;
+}
+.sec3 .container p {
+  font-size: 20px;
+  color: grey;
+}
+.sec3 .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.sec3 .container h1 span {
+  position: relative;
+}
+.sec3 .container h1 span::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  background-color: blue;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.sec3 .container .row {
+  padding: 30px 0;
+}
+.sec3 .container .row .card {
+  border: none;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.sec3 .container .row .card .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sec3 .container .row .card .card-body span {
+  color: grey;
+}
+.sec3 .container .row .card .card-body h2 {
+  font-weight: 500;
+  font-size: 25px;
+}
+.sec3 .container .row .card .card-body h2:hover {
+  color: blue;
+}
+.sec3 .container .row .card .allhover {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 30px 40px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 1s ease-in-out;
+  transform: translateY(-50px);
+}
+.sec3 .container .row .card .allhover a {
+  color: white;
+  padding: 10px;
+  border: 1px solid blue;
+  background: blue;
+}
+.sec3 .container .row .card:hover .allhover {
+  display: flex;
+  transform: translateY(-150px);
+}
+
+.sec4 {
+  background: url("../img/parallax-bg.png");
+  background-position: center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+.sec4 .container {
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.sec4 .container h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.sec4 .container h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.sec4 .container p {
+  font-size: 20px;
+  color: grey;
+  font-weight: 300;
+}
+.sec4 .container .button {
+  border: 1px solid blue;
+  background: blue;
+  color: white;
+  font-weight: 500;
+  width: 200px;
+  border-radius: 25px;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+.sec4 .container .button:hover {
+  background-color: transparent;
+  color: black;
+  border-color: blue;
+}
+
+.sec5 {
+  font-family: "Roboto", sans-serif;
+}
+.sec5 .container {
+  padding: 50px 0;
+}
+.sec5 .container p {
+  font-size: 20px;
+  color: grey;
+}
+.sec5 .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.sec5 .container h1 span {
+  position: relative;
+}
+.sec5 .container h1 span::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  background-color: blue;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.sec5 .container .row {
+  padding: 30px 0;
+}
+.sec5 .container .row .card {
+  border: none;
+}
+.sec5 .container .row .card .cord-body {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sec5 .container .row .card .cord-body:hover a {
+  color: blue;
+}
+.sec5 .container .row .card:hover .cardhover {
+  display: flex;
+}
+.sec5 .container .row .card .cardhover {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  bottom: 75px;
+  justify-content: center;
+}
+.sec5 .container .row .card .cardhover a {
+  padding: 10px;
+  background-color: #384aeb;
+  color: white;
+}
+
+.sec6 {
+  font-family: "Roboto", sans-serif;
+}
+.sec6 .container {
+  padding: 50px 0;
+}
+.sec6 .container p {
+  font-size: 20px;
+  color: grey;
+}
+.sec6 .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.sec6 .container h1 span {
+  position: relative;
+}
+.sec6 .container h1 span::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  background-color: blue;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.sec6 .container .row {
+  padding: 30px 0;
+}
+.sec6 .container .row .card {
+  border: none;
+}
+.sec6 .container .row .card .card-body a {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.sec6 .container .row .card .card-body a:hover {
+  color: blue;
+}
+.sec6 .container .row .card .card-body a:hover i {
+  transition: 0.1s;
+  padding-left: 5px;
+}
+.sec6 .container .row .card .card-body p {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

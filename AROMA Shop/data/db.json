@@ -1,0 +1,78 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "category": "accessories",
+      "name": "Quartz Belt Watch",
+      "image": "blog2.png",
+      "price": "150",
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "8",
+      "category": "accessories",
+      "name": "Room  Flash Watch",
+      "image": "product8.png",
+      "price": 1340,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "7",
+      "category": "accessories",
+      "name": "Woman Belt Watch",
+      "image": "product7.png",
+      "price": 780,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "6",
+      "category": "accessories",
+      "name": "Man Belt Watch",
+      "image": "product6.png",
+      "price": 470,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "2",
+      "category": "accessories",
+      "name": "Quartz Belt Watch",
+      "image": "product2.png",
+      "price": 370,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "3",
+      "category": "accessories",
+      "name": "Man Office Watch",
+      "image": "product3.png",
+      "price": 980,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "4",
+      "category": "accessories",
+      "name": "Charcing Car",
+      "image": "product5.png",
+      "price": 270,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    },
+    {
+      "id": "5",
+      "category": "accessories",
+      "name": "Blutooth Belt Watch",
+      "image": "product2.png",
+      "price": 550,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    }
+  ],
+  "favorite": [
+    {
+      "id": "1",
+      "category": "accessories",
+      "name": "Quartz Belt Watch",
+      "image": "product1.png",
+      "price": 150,
+      "description": "All Access database tables can be used and processed programmatically. The database are not locked or protected in any way."
+    }
+  ]
+}
